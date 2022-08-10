@@ -35,4 +35,29 @@
     
 </body>
 
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.2/firebase-app.js";
+    import { getDatabase } from "https://www.gstatic.com/firebasejs/9.9.2/firebase-database.js";
+
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyCeQGEbfM34UvBNf2L5W0__ARytkDLdxUc",
+      authDomain: "authentication-appli.firebaseapp.com",
+      databaseURL: "https://authentication-appli-default-rtdb.firebaseio.com",
+      projectId: "authentication-appli",
+      storageBucket: "authentication-appli.appspot.com",
+      messagingSenderId: "134624580281",
+      appId: "1:134624580281:web:21d721f7c9764c90180168"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const database = getDatabase(app);
+    
+  </script>
+
 </html>
