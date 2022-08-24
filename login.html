@@ -14,13 +14,12 @@
 
     <div id="login-box">
         <div class="left">
-            <h1>Sign Up</h1>
+            <h1>Log In</h1>
             <input type="text" id="username" name="username" placeholder="username" />
-
             <input type="text" id="email" name="email" placeholder="E-mail" />
             <input type="password" id="password" name="password" placeholder="Password" />
 
-            <input type="submit" id="signUp" name="signup_submit" value="sign up" />
+            <input type="submit" id="logIn" name="logIn_submit" value="log In" />
         </div>
 
         <div class="right">
@@ -63,7 +62,7 @@
     const auth = getAuth();
 
 
-    signUp.addEventListener("click",(e) => {
+    logIn.addEventListener("click",(e) => {
 
         var email = document.getElementById('email').value;
         var password = document.getElementById('password').value;
